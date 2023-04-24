@@ -1,0 +1,298 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .slider {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+      .slides {
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        animation: slide 20s infinite;
+      }
+      .slide {
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .slide1 {
+        background-image: url(./1.jpg);
+      }
+      .slide2 {
+        background-image: url(./2.jpg);
+      }
+      .slide3 {
+        background-image: url(./3.jpg);
+      }
+      
+      
+      
+      .dots {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+      .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 10px;
+        border-radius: 50%;
+        background-color: #bbb;
+        transition: background-color 0.6s ease;
+      }
+      .active {
+        background-color: #717171;
+      }
+      .round-button {
+      display: inline-block;
+      color: white;
+        padding: 0.3em 1em;
+        background-color: transparent;
+        border-color: white;
+        border-radius: 25px;
+        text-align: center;
+        transition: background-color 0.3s ease;
+        font-size: large;
+      }
+
+      .round-button:hover {
+        color: black;
+        background-color: white;
+        
+        cursor: pointer;
+      }
+      H1{
+        height: 100%;
+        width: 100%;
+        padding-left: 10%;
+        padding-top: 10%;
+        color: rgb(255, 255, 255);
+        font-size: xxx-large;
+      }
+      .social-icons {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 20%;
+  transform: translateY(-50%);
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  border-radius: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.social-icon i {
+  color: #fff;
+  font-size: 20px;
+}
+.sec{
+  
+  width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        width: 100%;
+        height: 100%;
+  
+}
+.top-left {
+  position: absolute;
+  top: 6%;
+  left: 0%;
+}
+.container {
+        width: 100%;
+        height: 80%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        scrollbar-width: none;
+      }
+      .container::-webkit-scrollbar {
+        display: none;
+      }
+      .image-container {
+        display: inline-block;
+        height: 100%;
+      }
+      .image {
+        height: 100%;
+        width: auto;
+      }
+
+    
+
+
+</style>
+  </head>
+  <body>
+   
+    <div class="slider">
+      
+      <div class="slides">
+
+        <div class="slide slide1">
+          <div class="social-icons">
+            <div class="social-icon">
+              <i class="fa fa-facebook"></i>
+            </div>
+            <div class="social-icon">
+              <i class="fa fa-twitter"></i>
+            </div>
+          </div>
+          <h1 id="typing-text">NEW LEVEL<BR>OF SOUND<BR>EXPERIEANCE<BR>
+            <p style="font-size: 14px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+               Voluptate, temporibus? Temporibus id dicta saepe. Quod vel </p>
+          <button class="round-button">BUY NOW >></button>
+          <button class="round-button">Click TO INFO >></button>
+        </div>
+        <div class="slide slide2">
+          <div class="social-icons">
+            <div class="social-icon">
+              <i class="fa fa-facebook"></i>
+            </div>
+            <div class="social-icon">
+              <i class="fa fa-twitter"></i>
+            </div>
+          </div>
+          <h1 id="typing-text">NEW LEVEL<BR>OF SOUND<BR>EXPERIEANCE<BR>
+            <p style="font-size: 14px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+               Voluptate, temporibus? Temporibus id dicta saepe. Quod vel </p>
+          <button class="round-button">BUY NOW >></button>
+          <button class="round-button">Click TO INFO >></button>
+        </div>
+        <div class="slide slide3"><div class="social-icons">
+          <div class="social-icon">
+            <i class="fa fa-facebook"></i>
+          </div>
+          <div class="social-icon">
+            <i class="fa fa-twitter"></i>
+          </div>
+        </div>
+          <h1 id="typing-text">NEW LEVEL<BR>OF SOUND<BR>EXPERIEANCE<BR>
+            <p style="font-size: 14px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+               Voluptate, temporibus? Temporibus id dicta saepe. Quod vel </p>
+          <button class="round-button">BUY NOW >></button>
+          <button class="round-button">CLICK TO INFO >></button>
+        </div>
+        
+      </div>
+    </div>
+    <div class="dots">
+      <span class="dot active" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    
+     
+    </div>
+    <div class="sec">
+      
+      <img src="3.jpg" style="width: 100%; height:100%">
+      <div class="top-left">
+        <h1>
+          Lorem ipsum dolor sit amet <br>
+          dolor sit amet sit ips
+          <p style="font-size: 18px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad asperiores sit <br>
+            autem deleniti expedita similique</p>
+          <p style="font-size: 12px; padding-top: 0%;">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe ratione cupiditate, earum consequuntur<br>
+            quas a. Praes entium minus iusto quos cupiditate sunt porro,aliquam tenetur soluta ex voluptatem?<br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe ratione cupiditate, earum consequuntur<br>
+            quas a. Praes entium minus iusto quos cupiditate sunt porro,aliquam tenetur soluta ex voluptatem?
+         <br> <br>
+          </p>
+          <button class="round-button" style="margin-left: 5%;">CLICK TO INFO >></button>
+          
+        </h1>
+        
+      </div>
+
+    </div>
+    <div class="container">
+      <div class="container">
+        <div class="image-container">
+          <img class="image" src="1.jpg" alt="Image 1">
+        </div>
+        <div class="image-container">
+          <img class="image" src="2.jpg" alt="Image 2">
+        </div>
+        <div class="image-container">
+          <img class="image" src="3.jpg" alt="Image 3">
+        </div>
+        <div class="image-container">
+          <img class="image" src="1.jpg" alt="Image 1">
+        </div>
+        <div class="image-container">
+          <img class="image" src="2.jpg" alt="Image 2">
+        </div>
+        <div class="image-container">
+          <img class="image" src="3.jpg" alt="Image 3">
+        </div>
+      </div>
+      
+         
+    
+    
+  </body>
+  <script>
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("slide");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+}
+
+
+    </script>
