@@ -1,0 +1,53 @@
+<style>
+    #b1,#b2,#b3,#b4{
+      display: inline-block;
+      text-align: center;
+          padding: 0.5em 1em;
+          background-color: skyblue;
+          border-color: green;
+          border-radius: 25px;
+          width: 100%;
+          transition: background-color 0.3s ease;
+          
+  
+  
+    }
+    #b1:hover,#b2:hover,#b3:hover,#b4:hover{
+      background-color: transparent;
+          cursor: pointer;
+  
+    }
+  
+    table, th, td {
+  
+    border-collapse: collapse;
+    margin-left: auto;margin-right: auto;
+    width: 30%;
+    
+  }
+  
+  </style>
+  <table >
+       <tr>
+        <td>
+          <button id="B1">1</button>
+       </tr>
+       <tr>
+      <td>
+          <button id="B2">2</button>
+      </td>  
+      </tr>
+      
+
+      </tr>
+     
+  </table>
+  <script>
+    document.getElementById("B1").addEventListener("click", function() {
+      window.open("1.html", "_blank");
+    });
+    document.getElementById("B2").addEventListener("click", function() {
+      window.open("2.html", "_blank");
+    });
+
+  </script>
